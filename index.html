@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mansi Chotaliya — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Mansi<span>.</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>
+    <li><a href="#contact" class="nav-cta" onclick="closeMenu()">Hire Me</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge">Open to internships &amp; placements</div>
+        <h1 class="hero-name">Mansi<br/><em>Chotaliya</em></h1>
+        <p class="hero-role">// Computer Engineering Student · Backend Developer</p>
+        <p class="hero-desc">
+          Third-year B.Tech student at VPKBIET, specialising in Python backend development, Data Analytics, and Robotics. I build <strong>scalable web applications</strong> and <strong>data-driven dashboards</strong> that turn complex problems into clean solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work →</a>
+          <a href="#contact" class="btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:mansichotaliya48@gmail.com" class="social-link" title="Email">✉</a>
+          <a href="https://www.linkedin.com/in/mansi-chotaliya-267875318" target="_blank" class="social-link" title="LinkedIn">in</a>
+          <a href="#" target="_blank" class="social-link" title="GitHub">gh</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card fade-up">
+          <div class="profile-avatar">M</div>
+          <h3>Mansi Chotaliya</h3>
+          <p>BTech Computer Engineering · VPKBIET Pune</p>
+          <div class="stat-row">
+            <div class="stat-box">
+              <div class="val">9.05</div>
+              <div class="lbl">CGPA / 10.0</div>
+            </div>
+            <div class="stat-box">
+              <div class="val">2+</div>
+              <div class="lbl">Projects Built</div>
+            </div>
+            <div class="stat-box">
+              <div class="val">1st</div>
+              <div class="lbl">Idea Spark 2025</div>
+            </div>
+            <div class="stat-box">
+              <div class="val">3rd</div>
+              <div class="lbl">GDG Hackathon</div>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag teal">Power BI</span>
+            <span class="tag">MySQL</span>
+            <span class="tag teal">React</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Engineering student who loves building real-world systems</h2>
+        <p>I'm a third-year <strong>Computer Engineering student</strong> at Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering &amp; Technology, pursuing a <strong>Double Minor in Digital Manufacturing &amp; Robotics</strong>.</p>
+        <p>My focus is <strong>Python backend development</strong> and <strong>data analytics</strong> — I enjoy building systems that are fast, scalable, and genuinely useful. I've worked with Django REST APIs, MySQL databases, Firebase, and Power BI dashboards on real projects.</p>
+        <p>Beyond coding, I have hands-on experience with <strong>SCARA and articulated robots</strong>, CNC machining, and MATLAB — bridging the gap between software and physical automation systems.</p>
+        <p>I'm currently looking for <strong>internships and placement opportunities</strong> where I can contribute meaningfully from day one.</p>
+        <div style="margin-top:2rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <span class="tag">📍 Satara, Maharashtra</span>
+          <span class="tag teal">🎓 2023 – 2027</span>
+          <span class="tag">💼 Open to Work</span>
+        </div>
+      </div>
+
+      <div class="about-right fade-up">
+        <div class="section-label">Education</div>
+        <ul class="education-list">
+          <li class="edu-item">
+            <div class="edu-deg">B.Tech Computer Engineering</div>
+            <div class="edu-school">Vidya Pratishthan's KBIET, Pune</div>
+            <div class="edu-school" style="color:var(--accent2); font-size:0.78rem;">Double Minor: Digital Manufacturing &amp; Robotics</div>
+            <div class="edu-meta">
+              <span class="year">2023 – Pursuing</span>
+              <span class="score">CGPA: 9.05 / 10</span>
+            </div>
+          </li>
+          <li class="edu-item">
+            <div class="edu-deg">HSC — Science</div>
+            <div class="edu-school">Loknete Subrao Kadam Jr. College, Satara</div>
+            <div class="edu-meta">
+              <span class="year">Completed 2023</span>
+              <span class="score">73.50%</span>
+            </div>
+          </li>
+          <li class="edu-item">
+            <div class="edu-deg">SSC</div>
+            <div class="edu-school">Chhatrapati Shahu Academy, Satara</div>
+            <div class="edu-meta">
+              <span class="year">Completed 2021</span>
+              <span class="score">98.40%</span>
+            </div>
+          </li>
+        </ul>
+
+        <div style="margin-top:2rem;">
+          <div class="section-label">Languages</div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.75rem;">
+            <span class="tag teal">English</span>
+            <span class="tag teal">Hindi</span>
+            <span class="tag">Marathi (Native)</span>
+            <span class="tag">Gujarati</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="skills-header fade-up">
+      <div class="section-label">Technical Skills</div>
+      <h2 class="section-title">What I work with</h2>
+      <p class="section-sub">A focused stack built through real projects — not just tutorials.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🐍</div>
+        <h4>Backend Development</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">DSA</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🗄️</div>
+        <h4>Databases</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Firestore</span>
+          <span class="skill-tag">DBMS</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">📊</div>
+        <h4>Data & Analytics</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">MS Excel</span>
+          <span class="skill-tag">Dashboards</span>
+          <span class="skill-tag">Data Viz</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">⚛️</div>
+        <h4>Frontend & Tools</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">AWS EC2</span>
+          <span class="skill-tag">Canva</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🤖</div>
+        <h4>Robotics & Manufacturing</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">SCARA Robots</span>
+          <span class="skill-tag">Articulated Robots</span>
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">CNC</span>
+          <span class="skill-tag">VMC</span>
+          <span class="skill-tag">Simulation</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">☁️</div>
+        <h4>Cloud & Authentication</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS EC2</span>
+          <span class="skill-tag">Firebase Auth</span>
+          <span class="skill-tag">Role-Based Access</span>
+          <span class="skill-tag">Deployment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header fade-up">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've built</h2>
+      <p class="section-sub">Real-world projects with full backend architecture, databases, and deployments.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Featured Project 1 -->
+      <div class="project-card featured fade-up">
+        <div class="project-info">
+          <div class="project-num">PROJECT 01 — FEATURED</div>
+          <h3>Civic Issue Reporting &amp; Tracking Platform</h3>
+          <p>A web-based platform where citizens can register, track, and manage complaints related to public infrastructure and civic services — with real-time map integration and role-based access control.</p>
+          <ul class="project-highlights">
+            <li>Scalable Firestore NoSQL schema for issue management workflows</li>
+            <li>Secure role-based authentication via Firebase Authentication</li>
+            <li>Google Maps API for real-time geolocation tagging of complaints</li>
+            <li>Responsive React UI with modular, reusable components</li>
+            <li>Won 3rd place at GDG Hackathon for this project</li>
+          </ul>
+          <div class="project-stack" style="margin-top:1.25rem;">
+            <span class="tag teal">React</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Firestore</span>
+            <span class="tag teal">Google Maps API</span>
+            <span class="tag">Auth</span>
+          </div>
+        </div>
+        <div>
+          <div class="project-visual">🗺️</div>
+          <div style="margin-top:1rem; padding:1rem; background:var(--surface2); border-radius:10px; border:1px solid var(--border);">
+            <p style="font-size:0.78rem; font-family:'JetBrains Mono',monospace; color:var(--teal); margin-bottom:0.5rem;">// IMPACT</p>
+            <p style="font-size:0.82rem; color:var(--muted);">Real-time citizen grievance management — streamlines how municipalities respond to public complaints.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-up">
+        <div class="project-num">PROJECT 02</div>
+        <h3>Placement &amp; Internship Analytics System</h3>
+        <p>A full-stack placement management system for colleges to track student placements, company data, and generate actionable analytics dashboards.</p>
+        <ul class="project-highlights">
+          <li>Django backend with admin authentication and role management</li>
+          <li>Structured MySQL schema for branch/year/company-wise data</li>
+          <li>Power BI dashboards for placement % and CTC distribution</li>
+          <li>Insights for comparing internship vs. full-time offers</li>
+        </ul>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">MySQL</span>
+          <span class="tag teal">Power BI</span>
+        </div>
+      </div>
+
+      <!-- Volunteer Management Poster -->
+      <div class="project-card fade-up">
+  <div class="project-num">PROJECT 03</div>
+  <h3>Adani Group Project — Camera-Based Safety Monitoring</h3>
+  <p>An AI-powered video analytics system designed to detect PPE violations and unsafe behaviors in real time in industrial environments.</p>
+  <ul class="project-highlights">
+    <li>Built using YOLOv8 for accurate detection of safety gear like helmets and vests</li>
+    <li>Used OpenCV for real-time video processing and frame analysis</li>
+    <li>Implemented alert system for instant violation detection</li>
+    <li>Stored violation data for reporting and analytics</li>
+    <li>Designed scalable backend using FastAPI</li>
+  </ul>
+  <div class="project-stack">
+    <span class="tag">Python</span>
+    <span class="tag">YOLOv8</span>
+    <span class="tag">OpenCV</span>
+    <span class="tag">PyTorch</span>
+    <span class="tag teal">FastAPI</span>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:0;">
+      <div class="section-label">Achievements &amp; Leadership</div>
+      <h2 class="section-title">Recognition &amp; Impact</h2>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="achievement-card fade-up">
+        <div class="achievement-icon">🥇</div>
+        <div>
+          <h4>1st Rank — Idea Spark 2025</h4>
+          <p>Won first place for presenting a research poster on an Online Volunteer Management System at the college-level technical event.</p>
+        </div>
+      </div>
+      <div class="achievement-card fade-up">
+        <div class="achievement-icon">🥉</div>
+        <div>
+          <h4>3rd Rank — GDG Hackathon</h4>
+          <p>Secured 3rd place for developing the Civic Issue Reporting &amp; Tracking Platform to streamline public grievance management.</p>
+        </div>
+      </div>
+      <div class="achievement-card fade-up">
+        <div class="achievement-icon">🎨</div>
+        <div>
+          <h4>Creativity Head — CESA</h4>
+          <p>Led event branding, creative design, and promotional activities for the Computer Engineering Students' Association departmental initiatives.</p>
+        </div>
+      </div>
+      <div class="achievement-card fade-up">
+        <div class="achievement-icon">📊</div>
+        <div>
+          <h4>Power BI Workshop — Instructor</h4>
+          <p>Delivered hands-on Power BI training to second-year students, covering data visualization techniques and interactive dashboard development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div style="margin-top:4rem;" class="fade-up">
+      <div class="section-label">Certifications</div>
+      <div class="certs-row">
+  <div class="cert-card">
+    <div class="cert-badge">📜</div>
+    <div>
+      <h4>Busniess Intelligence & Analytics</h4>
+      <p>NPTEL Certification</p>
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-badge">🗄️</div>
+    <div>
+      <h4>Database Management System</h4>
+      <p>NPTEL Certification</p>
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-badge">⚙️</div>
+    <div>
+      <h4>Automatic Control</h4>
+      <p>NPTEL Certification</p>
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-badge">📊</div>
+    <div>
+      <h4>Power BI Workshop</h4>
+      <p>Google Developer Groups (GDG)</p>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-up">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="section-sub" style="margin-bottom:0;">I'm actively seeking internship and placement opportunities. Whether you have a project or just want to connect — reach out!</p>
+        <ul class="contact-info-list">
+          <li>
+            <a href="mailto:mansichotaliya48@gmail.com" class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div class="contact-item-text">
+                <small>Email</small>
+                <span>mansichotaliya48@gmail.com</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+919404829821" class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div class="contact-item-text">
+                <small>Phone</small>
+                <span>+91 9404829821</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mansi-chotaliya-267875318" target="_blank" class="contact-item">
+              <div class="contact-item-icon">💼</div>
+              <div class="contact-item-text">
+                <small>LinkedIn</small>
+                <span>linkedin.com/in/mansi-chotaliya-267875318</span>
+              </div>
+            </a>
+          </li>
+          <li>
+           <a href="https://github.com/mansichotaliya22" target="_blank" class="contact-item">
+  <div class="contact-item-icon">🔗</div>
+  <div class="contact-item-text">
+    <small>GitHub</small>
+    <span>github.com/mansichotaliya22</span>
+  </div>
+</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fade-up">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>YOUR NAME</label>
+            <input type="text" placeholder="Jane Smith" required/>
+          </div>
+          <div class="form-group">
+            <label>EMAIL ADDRESS</label>
+            <input type="email" placeholder="jane@company.com" required/>
+          </div>
+          <div class="form-group">
+            <label>SUBJECT</label>
+            <input type="text" placeholder="Internship Opportunity / Collaboration"/>
+          </div>
+          <div class="form-group">
+            <label>MESSAGE</label>
+            <textarea rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:fit-content;">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <span>Mansi Chotaliya</span>. Built for placement & beyond.</p>
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
